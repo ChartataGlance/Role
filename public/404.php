@@ -8,10 +8,15 @@
 </head>
 <body>
    <h1>404
-   CREATE TABLE `automatedtrade_co_uk`.`veryfiedusers` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(60) NOT NULL , `pass` VARCHAR(256) NOT NULL , `email` VARCHAR(60) NOT NULL , 
-   `verified` TINYINT(1) NOT NULL , 
-   `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
-    PRIMARY KEY (`id`)) ENGINE = InnoDB;
+   CREATE TABLE `u333044244_chartataglance`.`veryfiedusers`
+   (`id` INT NOT NULL AUTO_INCREMENT ,
+    `name` VARCHAR(60) NOT NULL ,
+    `pass` VARCHAR(256) NOT NULL ,
+    `email` VARCHAR(60) NOT NULL , 
+    `verified` TINYINT(1) NOT NULL,
+    `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+    PRIMARY KEY (`id`))
    </h1>
 </body>
 </html>
+ALTER TABLE `veryfiedusers` ADD `vkey` VARCHAR NOT NULL AFTER `email`;

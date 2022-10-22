@@ -37,9 +37,9 @@
    </style>
    <div class="box">
 
-<h1>SuccesFully Signed 
-   Pls Check Email 
-</h1>
+      <h1>SuccesFully Signed
+         Pls Check Email
+      </h1>
 
    </div>
 
