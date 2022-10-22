@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./searchbar.css">
+   <style>
+      :root {
+         --border-color: rgba(33, 45, 56, 1);
+         --box-shadow: rgba(108, 108, 126, 0.1) 0px 4px 16px,
+            rgba(170, 170, 250, 0.1) 0px 8px 24px,
+            rgba(170, 17, 26, 0.1) 0px 16px 56px;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         text-decoration: none;
+         list-style: none;
+      }
+
+      body {
+        
+         max-width: 768px;
+         margin: 0px auto;
+         
+         min-height: 768px;
+         font-family: "ubuntu", sans-serif;
+         background: rgb(30, 49, 69);
+      }
+
+      .logo {
+         margin-left: 25%;
+         padding: 2rem;
+         font-size: 2rem;
+         font-weight: 700;
+         letter-spacing: 0.4rem;
+         color: rgb(218, 216, 226);
+      }
+
+      nav {
+         background-color: var(--border-color);
+         min-height: 100px;
+         border-radius: 2rem 2rem 0 0;
+         /* box-shadow: var(--box-shadow); */
+      }
+
+      main {
+         min-height: 768px;
+         border-right: 2vh solid var(--border-color);
+         border-left: 2vh solid var(--border-color);
+         /* box-shadow: var(--box-shadow); */
+      }
+
+      section {
+         background: var(--border-color);
+         min-height: 480px;
+         background-image: url(https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/piclogo.svg?alt=media&token=0d77cd36-4849-41fd-a041-fa43583c89c5);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+
+
+      }
+
+      .herocontent h3 {
+        
+         margin-top: 195px;
+         left: 120px;
+         font-weight: 500;
+         color: rgb(118, 131, 141);
+
+      }
+
+      .herocontent h1 {
+       
+         top: 140px;
+         left: 100px;
+         font-size: 2.5rem;
+         font-weight: 700;
+         letter-spacing: 0.2rem;
+         color: rgb(139, 208, 243);
+         text-shadow: -1px -1px 10px rgba(13, 13, 44, 0.5),
+            2px 2px 2px rgba(13, 13, 44, 0.5);
+      }
+
+
+
+      .herocard {
+      
+      
+         top: 220px;
+         margin-top: 100px;
+        
+         display: flex;
+
+
+
+      }
+
+
+
+      article {
+         box-shadow: var(--box-shadow);
+         background: var(--border-color);
+         text-transform: capitalize;
+      }
+
+
+
+      .articleimg {
+         padding: 20px;
+         box-shadow: var(--box-shadow);
+         background: var(--border-color);
+         border-radius: 1rem;
+      }
+
+
+
+      .articlecontent h4 {
+         text-transform: capitalize;
+         padding: 5px;
+         color: aliceblue;
+         margin-left: 10px;
+         text-indent: 20px;
+         font-weight: 400;
+      }
+
+      .articlecontent h5 {
+         text-transform: capitalize;
+         color: rgb(130, 136, 141);
+         margin-left: 10px;
+         text-indent: 20px;
+         font-weight: 300;
+
+      }
+
+      .herocard a {
+         color: aqua;
+         background: #291c5a3e;
+         border-radius: 0.5rem;
+         margin-left: 1rem;
+         padding: 0.7rem;
+         font-size: 1.1rem;
+         border-radius: 10px;
+         box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0.2),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.02);
+         cursor: pointer;
+         transition: transform 0.5s;
+      }
+
+      .herocard a:hover {
+         box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
+            inset -2px -2px 2px -1px rgba(255, 255, 255, 1),
+            -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+            0px 12px 10px -10px rgba(0, 0, 0, 0.0);
+         border: 1px solid rgba(0, 0, 0, 0.01);
+         transform: translateY(2px);
+         font-size: 1rem;
+      }
+
+.con-link{
+   margin-left: 66%;
+}
+
+      .con-link a {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: aqua;
+         background: rgba(25, 118, 185, 0.2);
+         height: 39px;
+         width: 59px;
+         margin-left: 15px;
+         border-radius: 10px;
+         box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0.2),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.02);
+         cursor: pointer;
+         transition: transform 0.5s;
+      }
+
+      .con-link a:hover {
+         box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
+            inset -2px -2px 2px -1px rgba(255, 255, 255, 1),
+            -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+            0px 12px 10px -10px rgba(0, 0, 0, 0.0);
+         border: 1px solid rgba(0, 0, 0, 0.01);
+         transform: translateY(2px);
+      }
+   </style>
+   <title>ChartataGlance</title>
+</head>
+
+<body>
+   <header>
+      <div class="content">
+         <div class="search-bar">
+            <input 
+               type="text"
+               class="search-bar___input"
+               placeholder="search"
+               aria-label="search"
+            />
+            <button class="search-bar___submit">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_116_2)">
+                  <path d="M11 22C4.935 22 0 17.065 0 11C0 4.935 4.935 0 11 0C17.065 0 22 4.935 22 11C22 17.065 17.065 22 11 22ZM11 2C6.038 2 2 6.037 2 11C2 15.963 6.038 20 11 20C15.962 20 20 15.963 20 11C20 6.037 15.962 2 11 2Z" fill="#CA9696"/>
+                  <path d="M23 24C22.8687 24.0002 22.7386 23.9744 22.6173 23.9241C22.4959 23.8738 22.3857 23.8 22.293 23.707L17.498 18.912C17.3105 18.7244 17.2052 18.47 17.2053 18.2047C17.2054 17.9394 17.3109 17.685 17.4985 17.4975C17.6861 17.31 17.9406 17.2047 18.2058 17.2048C18.4711 17.2049 18.7255 17.3104 18.913 17.498L23.707 22.293C23.8473 22.4327 23.9429 22.6109 23.9818 22.805C24.0206 22.9991 24.0009 23.2004 23.9252 23.3833C23.8494 23.5662 23.721 23.7225 23.5563 23.8323C23.3916 23.9421 23.198 24.0005 23 24V24Z" fill="#CF7878"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_116_2">
+                  <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+            </button>
+         </div>
+      </div>
+      <ul style=" display: flex; " class="con-link">
+         <a href="https://twitter.com/Chartataglance">
+            <img
+               src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/twitter.svg?alt=media&token=87d580b1-4b98-44cf-8336-4a43bacf7e57"
+               alt="twitter">
+         </a>
+         <a href="https://t.me/ChartataGlance">
+            <img
+               src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/tele.svg?alt=media&token=fe8a26e1-9b9c-4fbd-9d15-372ce200d45d"
+               alt="tele">
+
+         </a>
+         <a href="https://wa.me/447833322251">
+            <img
+               src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/whatsup.svg?alt=media&token=2291fef3-2dbe-4c38-85f7-c4c9b9771bd9"
+               alt="whatsup">
+         </a>
+      </ul>
+   </header>
+   <nav>
+      <a href="https://chartataglance.co.uk/">
+         <h1 class="logo">ChartataGlance</h1>
+
+      </a>
+
+   </nav>
+   <main>
+
+      <section>
+         <div class="herocontent">
+            <center>
+               <h3>Pure Data Analysis! No News , No Hype </h3>
+               <h1>Technical Analysis</h1>
+            </center>
+         </div>
+         <div class="herocard" style="vertical-align: middle">
+            <div><a href="https://www.chartataglance.com">STOCKS</a></div>
+            <div><a href="https://www.chartataglance.com">CFD</a></div>
+            <div><a href="https://www.chartataglance.com">COMMODITYS</a></div>
+            <div><a href="https://www.chartataglance.com">FOREX</a></div>
+         </div>
+      </section>
+
+
+
+
+
+      <article>
+         <a href="https://automatedtrade.co.uk/SendEmail/templates/1710.html" rel="nofollow" target="_blank">
+            <p style=" color: rgb(89, 114, 135); text-align:right;">View in Browser 
+               <img  src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/linkout.svg?alt=media&token=da67e158-4ea8-4b14-a361-634b8ac463b1"> </p>
+         </a>
+         <div style="padding:20px ;" class="articlecontent">
+            <label style="color: #10c513">Posted: 31 augest 2022
+               <h3 style=" color: #1092c5; padding: 20px; text-align: center; text-transform: capitalize; ">reliance
+                  weekly chart</h3>
+               <h4>latest update </h4>
+               <h5>Lorem ipsum dolor sit amet consectetur a
+                  dipisicing elit. Veniam quisquam eum nesciunt nemo d
+                  olorem distinctio in expedita laudantium odit,
+                  ipsa nam est perferendis veritatis, consequuntur a
+                  tque. Molestiae laudantium pariatur minima?</h5>
+               <div class="articleimg">
+                  <img width="100%" src="https://www.tradingview.com/x/NIJLCbw7/">
+               </div>
+               <br>
+               <h4>indicator</h4>
+               <h5>para</h5>
+               <div class="articleimg">
+                  <img width="100%" src="https://www.tradingview.com/x/f63KwcvH/">
+               </div>
+            </label>
+         </div>
+      </article>
+   </main>
+
+   <footer style=" background: var(--border-color);  min-height: 66px; border-radius: 0 0 2rem 2rem;">
+      <a href="https://www.ChartataGlance.co.uk">
+         <center>
+            <p style="color: aliceblue; padding: 20px; vertical-align: middle; ">&copy; ChartataGlance | All Rights
+               Reserved</p>
+         </center>
+      </a>
+   </footer>
+
+</body>
+
+</html>

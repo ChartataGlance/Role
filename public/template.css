@@ -1,0 +1,144 @@
+/** @format */
+
+:root {
+	--border-color: rgb(33, 45, 56);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	margin: 0px;
+	min-width: 420px;
+	min-height: 768px;
+	border: 5px solid #1092c5;
+	font-family: "ubuntu", sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--border-color);
+	min-height: 100px;
+	border-radius: 2rem 2rem 0 0;
+}
+.logo {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.4rem;
+	color: rgb(218, 216, 226);
+}
+
+main {
+	min-height: 677px;
+	border-right: 2vh solid var(--border-color);
+	border-left: 2vh solid var(--border-color);
+}
+
+section {
+	min-height: 377px;
+	background: var(--border-color);
+	position: relative;
+}
+.herocontent {
+	position: relative;
+	aspect-ratio: 16/9;
+	background-image: url(https://automatedtrade.co.uk/newslettertemplates/heropiv.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.herocontent h1 {
+	position: absolute;
+	top: 33%;
+	left: 13%;
+	font-size: 2.2rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	color: rgb(139, 208, 243);
+	text-shadow: -1px -1px 10px rgba(13, 13, 44, 0.5),
+		2px 2px 2px rgba(13, 13, 44, 0.5);
+}
+
+.herocontent h3 {
+	position: absolute;
+   top: 45%;
+   left: 13%;
+	font-weight: 500;
+	color: rgb(118, 131, 141);
+	
+}
+
+.herocard {
+   position: absolute;
+   top: 60%;
+   left: 10%;
+	display: grid;
+	grid-template-columns: 100px 100px 160px 100px;
+	align-items: center;
+	justify-items: center;
+}
+
+.herocard a {
+	color: aqua;
+	background: #4d2ebb3e;
+	border-radius: 1rem;
+	padding: 1rem;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	box-shadow: 6px 6px 10px -1px rgba(26, 1, 1, 0.2),
+		-6px -6px 10px -1px rgba(255, 255, 255, 0.02);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.herocard a:hover {
+	box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
+		inset -2px -2px 2px -1px rgba(255, 255, 255, 1),
+		-0.5px -0.5px 0px rgba(255, 255, 255, 1),
+		0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0.01);
+	transform: translateY(2px);
+	font-size: 1rem;
+}
+
+article {
+	background: var(--border-color);
+}
+.articlecontent{
+   padding: 2vh;
+   box-shadow: inset 4px 4px 6px -1px rgba(2, 1, 1, 0.2),
+		inset -2px -2px 2px -1px rgb(75, 69, 69),
+		-0.5px -0.5px 0px rgba(255, 255, 255, 1),
+		0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0);
+}
+.articleimg {
+	padding: 0.1vh;
+
+}
+
+.articlecontent h3 {
+	text-align: center;
+	color: #1092c5;
+}
+
+.articlecontent p {
+	padding: 5px;
+	color: aliceblue;
+	margin-left: 10px;
+	text-indent: 20px;
+	font-weight: 400;
+}
+
+footer {
+	background: var(--border-color);
+	text-align: center;
+	min-height: 3vh;
+	border-radius: 0 0 2rem 2rem;
+}
