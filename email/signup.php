@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
    <title>box shadow</title>
 </head>
 
-<body style=" background: linear-gradient(to left top, #1e2b37, #1a2b41, #1d2a4b, #292651, #392054); padding:10rem;">
+<body style=" background:  #1e2b37; padding:10rem;">
    <style>
       .box {
          position: absolute;
