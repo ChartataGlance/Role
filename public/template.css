@@ -142,3 +142,31 @@ footer {
 	min-height: 3vh;
 	border-radius: 0 0 2rem 2rem;
 }
+
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+form {
+	height: 200px;
+	width: 330px;
+	display: grid;
+
+}
+
+input {
+	width: 100%;
+	line-height: 1.5rem;
+}
+
+a {
+	color: rgb(230, 213, 210);
+	font-size: 2rem;
+	text-decoration: none;
+	
+}

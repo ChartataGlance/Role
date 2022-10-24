@@ -7,9 +7,9 @@ if (isset($_POST['submit'])) {
    $p = $mysqli->real_escape_string($_POST['p']);
    $p = md5($p);
 
-   $reSET = $mysqli->query( " select * from veryfiedusers where name = '$u' and pass = '$p' limit 1 ");
-   if($resSet->num_rows !=0){
-      $row = $reSET->fetch_assoc();
+   $result = $mysqli->query( " select * from veryfiedusers where name = '$u' and pass = '$p' limit 1 ");
+   if($result->num_rows !=0){
+      $row = $result->fetch_assoc();
       $veryfied = $row['verified'];
       $email = $row['email'];
       $date = $row['created'];

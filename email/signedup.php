@@ -8,58 +8,48 @@
    <title>box shadow</title>
 </head>
 
-<body style=" background: linear-gradient(to left top, #1e2b37, #1a2b41, #1d2a4b, #292651, #392054); padding:10rem;">
+<body style=" background: #1e2b37; padding:10rem;">
    <style>
       .box {
          position: absolute;
-         top: 50%;
+         top: 10%;
          left: 50%;
          transform: translate(-50%, -50%);
-
-      }
-
-      form {
          height: 200px;
          width: 330px;
          display: grid;
-
-      }
-
-      input {
-         width: 100%;
-         line-height: 1.5rem;
-      }
-
-      .err {
          color: tomato;
-         font-size: 1rem;
+         font-size: 3rem;
+         background: black;
+
       }
+
    </style>
    <div class="box">
 
-      <h1>SuccesFully Signed
+      <h5>SuccesFully Signed
          Pls Check Email
-      </h1>
-      <div class="box">
+      </h5>
 
-<div>
-   <a href="./email/login.php">login</a>
-</div>
-<div>
-   <a href="./email/signup.php">signup</a>
-</div>
-<div>
-   <a href="./email/maillh.php">sendmail</a>
 
-</div>
-
+      <div>
+         <a href="login.php">login</a>
+      </div>
+      <div>
+         <a href="signup.php">signup</a>
+      </div>
+      <div>
+         <a href="maillh.php">sendmail</a>
+      </div>
 
 
 
-</div>
 
 
    </div>
+
+
+
 
 </body>
 
