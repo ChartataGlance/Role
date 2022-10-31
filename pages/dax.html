@@ -25,7 +25,7 @@
 
    <meta property="og:site_name" content="Technical Analysis & Trading Algorithm">
    <meta property="og:type" content="website">
-   <meta property="og:url" content="https://chartataglance.co.uk">
+   <meta property="og:url" content="https://chartataglance.co.uk/dax.html">
    <meta property="og:description" content="Technical analysis & Trading Algorithm">
 
    <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
 
 
    <meta property="og:title" content="Technical analysis & Trading Algorithm">
-   <meta property="twitter:description" content="Technical analysis & Trading Algorithm">
+   <meta property="twitter:description" content="MultiTimeframe LIVE Chart at a Scroll">
    <meta property="og:image"
       content="https://firebasestorage.googleapis.com/v0/b/chartataglance.appspot.com/o/twitcard4ratio3.png?alt=media&token=7d210414-a3ec-4cdb-8c4f-a7890bb21755">
 
@@ -82,7 +82,7 @@
          min-width: 677px;
          min-height: 768px;
          font-family: "ubuntu", sans-serif;
-         background: rgb(30, 49, 69);
+         background: var(--clr-shade-dark);
       }
 
       .logo {
@@ -332,133 +332,203 @@
          </a>
       </ul>
    </nav>
-   <main>
-      <section>
-         <div class="herocontent">
-            <center>
-               <h3>Pure Data Analysis! No News , No Hype </h3>
-               <h1>Technical Analysis</h1>
-            </center>
-         </div>
-         <div class="herocard" style="vertical-align: middle">
-            <div><a href="#">STOCKS</a></div>
-            <div><a href="#">CFD</a></div>
-            <div><a href="#">COMMODITY</a></div>
-            <div><a href="#">FOREX</a></div>
-         </div>
-      </section>
-
-      <div style=" background: var(--clr-shade-dark);">
-         <div>
-            <div id="tradingview_d7222"></div>
-            <script src="https://s3.tradingview.com/tv.js"></script>
-            <script src="./tv.js"></script>
-         </div>
+<main>
+   <div class="articleheader">
+      <div class="articlestage">
+         <h2>The DAX</h2>
       </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+      new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|1D"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
       
-      <div class="articleheader">
-         <div class="articlestage">
-            <h2>The Drop</h2>
-         </div>
+   }); 
+   
+         </script>
       </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+            new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|1M"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
+      
+   }); 
+   
 
-      <article>
-         <a class="view-link" href="https://chartataglance.co.uk/thedrop.html" rel="nofollow" target="_blank">
-            <p style=" color: rgb(89, 114, 135);  text-align:right;">View in Browser
-               <img
-                  src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/linkout.svg?alt=media&token=da67e158-4ea8-4b14-a361-634b8ac463b1">
-            </p>
-         </a>
-         <div style="padding:20px ;" class="articlecontent">
+         </script>
+      </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+            new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|3M"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
+      
+   }); 
+   
+         </script>
+      </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+            new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|12M"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
+      
+   }); 
+   
+         </script>
+      </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+            new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|60M"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
+      
+   }); 
+   
+         </script>
+      </div>
+   </div>
+   <div style=" background: var(--clr-shade-dark);">
+      <div>
+         <div id="tradingview_d7222"></div>
+         <script src="https://s3.tradingview.com/tv.js"></script>
+         <script>
+            new TradingView.MediumWidget
+({
+      "symbols": ["GLOBALPRIME:GER30|ALL"],
+      "chartOnly": false,
+      "width": "100%",
+      "height": 768,
+      "locale": "en",
+      "colorTheme": "dark",
+      "autosize": false,
+      "showVolume": false,
+      "hideDateRanges": false,
+      "scalePosition": "right",
+      "scaleMode": "Normal",
+      "fontFamily": "Ubuntu, sans-serif",
+      "fontSize": "8",
+      "noTimeScale": false,
+      "valuesTracking": "1",
+      "backgroundColor": "rgba(19,38,58,0)",
+      "chartType": "bars",
+      "lineWidth": 1,
+      
+   }); 
+   
+         </script>
+      </div>
+   </div>
 
-          <!-- NOVEMBER STARTS-->
-            <label style="color: #10c513">Posted: 01/11/2022  
-               <div class="gapdiv" style="height: var(--font-big);"></div>
-               <div class="parastage">
-                  <div style="height: var(--font-small);"></div>
-                  <h1>The DAX40 Drop </h1>
-                  <div style="height: var(--font-big);"></div>
-                  <h3>Be aware there will be very high volatility</h3>
-                  <div style="height:var(--font-mid) ;"></div>
-                  <h5>Closer look at this chart! i have seen this pattern time after time it hppens in any timeframe ,
-                     <br>
-                     traders may call its manipulated market actualy its NOT.
-                     you can put any news for this drop
-                     <br>
-                     <div style="height:var(--font-mid) ;"></div>
-                  </h5>
-               </div>
-               <div style="height: var(--font-mid);"></div>
-               <h4>daily Chart</h4>
-               <div class="articleimg">
-                  <img width="100%" src="https://www.tradingview.com/x/3j7i9tTO/">
-               </div>
-            </label>
-            <!-- NOVEMBER ENDS-->
-            <div class="gapdiv" style="height: var(--font-big);"></div>
-            <label style="color: #10c513">Posted: 20/10/2022
-               <div style="height: var(--font-big);"></div>
 
-               <div class="parastage">
-                  <div style="height: var(--font-small);"></div>
-                  <h1>The DAX40 Drop </h1>
-                  <div style="height: var(--font-big);"></div>
-                  <h3>Be aware there will be very high volatility</h3>
-                  <div style="height:var(--font-mid) ;"></div>
-                  <h5>Closer look at this chart! i have seen this pattern time after time it hppens in any timeframe ,
-                     <br>
-                     traders may call its manipulated market actualy its NOT.
-                     you can put any news for this drop
-                     <br>
-                     <div style="height:var(--font-mid) ;"></div>
-                  </h5>
-               </div>
 
-               <div style="height: var(--font-mid);"></div>
-               <h4>daily Chart</h4>
-               <div class="articleimg">
-                  <img width="100%" src="https://www.tradingview.com/x/3j7i9tTO/">
-               </div>
-
-               <div class="gapdiv" style="height: var(--font-big);"></div>
-               <div class="parastage">
-                  <div style="height: var(--font-small);"></div>
-                  <h3>Be aware there will be very high volatility</h3>
-                  <div style="height:var(--font-mid);"></div>
-                  <h5>
-                     2nd segment have to done by end of the year, other wise dax will stuck in in between 12 to 13.5 for
-                     year and drop happen.
-                     one way or other drop is coming!
-                  </h5>
-                  <div style="height:var(--font-small) ;"></div>
-               </div>
-               <h4>Chart</h4>
-               <div class="articleimg">
-                  <img width="100%"  src="https://www.tradingview.com/x/XOfCbQw1/">
-               </div>
-               <div style="height: var(--font-big);"></div>
-               <h4>indicator</h4>
-
-               <div class="articleimg">
-                  <img width="100%" src="https://www.tradingview.com/x/HxcISHHo/">
-               </div>
-               <div style="height: var(--font-big);"></div>
-               <br>
-               <h4>4hr Chart</h4>
-               <div class="articleimg">
-                  <img width="100%" src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/PRT-Charts%2FDAX-4-hours-2022_10_21-12h48.png?alt=media&token=6f7059c4-bb67-4a86-bf5a-d32d9c21ba3d" >
-               </div>
-               <div style="height: var(--font-big);"></div>
-               <br>
-               <h4>1hr Chart</h4>
-               <div class="articleimg">
-                  <img width="100%" src="https://firebasestorage.googleapis.com/v0/b/chartataglancecom.appspot.com/o/PRT-Charts%2FDAX-1-hour-2022_10_21-12h50.png?alt=media&token=5b4abdc1-5b60-4fc0-b8f4-2cea67bb3a7b" >
-               </div>
-            </label>
-         </div>
-         <div style="height: var(--font-big);"></div>
-      </article>
-   </main>
+</main>
 
    <footer style=" background: var(--border-color);  min-height: 66px; border-radius: 0 0 2rem 2rem;">
       <a href="https://www.ChartataGlance.co.uk">

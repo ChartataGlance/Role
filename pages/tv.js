@@ -1,5 +1,5 @@
-new TradingView.MediumWidget(
-   {
+new TradingView.MediumWidget
+({
       "symbols": ["GLOBALPRIME:GER30|1M"],
       "chartOnly": false,
       "width": "100%",
@@ -18,6 +18,6 @@ new TradingView.MediumWidget(
       "backgroundColor": "rgba(19,38,58,0)",
       "chartType": "bars",
       "lineWidth": 1,
-      "container_id": "tradingview_d7222"
+      
    }); 
    
