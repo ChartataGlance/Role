@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta http-equiv="refresh" content="360">
+   <meta http-equiv="refresh" content="600">
    <meta http-equiv="pragma" content="no-cache" />
    <meta http-equiv="Clear-Site-Data" content="*" />
 
@@ -26,7 +26,7 @@
    <meta property="og:site_name" content="Technical Analysis & Trading Algorithm">
    <meta property="og:type" content="website">
    <meta property="og:url" content="https://chartataglance.co.uk/dax.html">
-   <meta property="og:description" content="Technical analysis & Trading Algorithm">
+   <meta property="og:description" content="MultiTimeframe LIVE Chart at a Scroll">
 
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:site" content="@chartataglance">
@@ -180,12 +180,10 @@
       }
 
       .articleheader {
-         
          background: var(--clr-shade-dark);
-         
          position: relative;
          min-height: 120px;
-         padding: 5rem;
+         padding: 3rem;
       }
 
       .articlestage h2 {
@@ -332,203 +330,237 @@
          </a>
       </ul>
    </nav>
-<main>
-   <div class="articleheader">
-      <div class="articlestage">
-         <h2>The DAX</h2>
+   <main>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+         <div class="tradingview-widget-container__widget"></div>
+         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+            async>
+               {
+                  "symbols": [
+                     {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500"
+                     },
+                     {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "US 100"
+                     },
+                     {
+                        "description": "US30",
+                        "proName": "CURRENCYCOM:US30"
+                     }
+                  ],
+                     "colorTheme": "dark",
+                        "isTransparent": true,
+                           "showSymbolLogo": true
+                             
+               }
+            </script>
       </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-      new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|1D"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
-         </script>
+      <!-- TradingView Widget END -->
+      <div class="articleheader">
+         <div class="articlestage">
+            <h2>The DAX</h2>
+         </div>
       </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-            new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|1M"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|1D"],
+                     "chartOnly": false,
+                     "noTimeScale": false,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
 
-         </script>
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
+
+            </script>
+         </div>
       </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-            new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|3M"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
-         </script>
-      </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-            new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|12M"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
-         </script>
-      </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-            new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|60M"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
-         </script>
-      </div>
-   </div>
-   <div style=" background: var(--clr-shade-dark);">
-      <div>
-         <div id="tradingview_d7222"></div>
-         <script src="https://s3.tradingview.com/tv.js"></script>
-         <script>
-            new TradingView.MediumWidget
-({
-      "symbols": ["GLOBALPRIME:GER30|ALL"],
-      "chartOnly": false,
-      "width": "100%",
-      "height": 768,
-      "locale": "en",
-      "colorTheme": "dark",
-      "autosize": false,
-      "showVolume": false,
-      "hideDateRanges": false,
-      "scalePosition": "right",
-      "scaleMode": "Normal",
-      "fontFamily": "Ubuntu, sans-serif",
-      "fontSize": "8",
-      "noTimeScale": false,
-      "valuesTracking": "1",
-      "backgroundColor": "rgba(19,38,58,0)",
-      "chartType": "bars",
-      "lineWidth": 1,
-      
-   }); 
-   
-         </script>
-      </div>
-   </div>
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|1M"],
+                     "chartOnly": true,
+                     "noTimeScale": true,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
+
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
 
 
+            </script>
+         </div>
+      </div>
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|3M"],
+                     "chartOnly": true,
+                     "noTimeScale": true,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
 
-</main>
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
+
+            </script>
+         </div>
+      </div>
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|12M"],
+                     "chartOnly": true,
+                     "noTimeScale": true,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
+
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
+
+            </script>
+         </div>
+      </div>
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|60M"],
+                     "chartOnly": true,
+                     "noTimeScale": true,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
+
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
+
+            </script>
+         </div>
+      </div>
+      <div style=" background: var(--clr-shade-dark);">
+         <div>
+            <div id="tradingview_d7222"></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+               new TradingView.MediumWidget
+                  ({
+                     "symbols": ["GLOBALPRIME:GER30|ALL"],
+                     "chartOnly": true,
+                     "noTimeScale": true,
+                     "width": "100%",
+                     "height": 768,
+                     "locale": "en",
+                     "colorTheme": "dark",
+                     "autosize": false,
+                     "showVolume": false,
+                     "hideDateRanges": false,
+                     "scalePosition": "right",
+                     "scaleMode": "Normal",
+                     "fontFamily": "Ubuntu, sans-serif",
+                     "fontSize": "8",
+
+                     "valuesTracking": "1",
+                     "backgroundColor": "rgba(19,38,58,0)",
+                     "chartType": "bars",
+                     "lineWidth": 1,
+
+                  });
+
+            </script>
+         </div>
+      </div>
+
+
+
+   </main>
 
    <footer style=" background: var(--border-color);  min-height: 66px; border-radius: 0 0 2rem 2rem;">
       <a href="https://www.ChartataGlance.co.uk">
@@ -539,7 +571,7 @@
       </a>
    </footer>
    <script>
-      
+
    </script>
 </body>
 
