@@ -9,30 +9,22 @@
   
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
    <script>
-
       $(document).ready(function(e) {
          $('#uname').keyup(function() {
             var uname = $(this).val();
             var output = $('#output');
-            
-
             if(uname != '') {
                $.post('check.php', { checkUser: uname }, function(data) {
                   $('#output').html(data);
                });
-
             }
-
          });
       });
 </script>
- 
 </head>
-
 <body style=" background: #1e2b37;  padding:10rem;">
 
    <form method="POST">
-
       <div>
          <input type="text" name="uname" id="uname"  />
          <span style="color:aliceblue ;" id="output"></span>

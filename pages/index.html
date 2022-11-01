@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>box shadow</title>
+   <link rel="stylesheet" href="zstyle.css">
+   <title>Dropdown</title>
+<style>
+
+</style>
 </head>
+<body>
+   <label style="color:#fff ;" for="">main category</label>
+   <select id="cat1" onchange="loadcat(2)"></select>
 
-<body style=" background-image: linear-gradient(to left top, #1e2b37, #1a2b41, #1d2a4b, #292651, #392054);">
-   <div class="box">
+   <label style="color:#fff ;"  >sub category</label>
+   <select id="cat2"></select>
 
-   </div>
-
-   <style>
-      .box {
-         width: 300px;
-         min-height: 300px;
-         position: absolute;
-         left: 20%;
-         top: 25%;
-         box-shadow: 0 0 0 10px var(--30clr),
-            0 0 0 12px var(--10clr);
+   <script>
+      function loadcat(level){
+         // var data = new FormData();
+         var data = new FormData();
+         data.append("id", (level==1 ? 0: document.getElementById("cat1").value))
+         // data.append("id", 0);
+         fetch("dropdown.php", {method:"post", body:data})
+         .then(res => res.json())
+         .then(cat => {
+            let selector = document.getElementById("cat" + level);
+            selector.innerHTML = "";
+            for ( let i in cat) {
+               let opt = document.createElement("option");
+               opt.value = i;
+               opt.innerHTML = cat[i];
+               selector.appendChild(opt);
+            }
+            if (level==1){ loadcat(2); }
+         });
       }
-
-      :root {
-         --10clr: #F6B3D5;
-         --30clr: #91789E;
-         --60clr: #13263A;
-      }
-      
-   </style>
+      window.onload =() => { loadcat(1); }
+   </script>
 
 </body>
-
 </html>
